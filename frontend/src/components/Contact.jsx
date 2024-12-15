@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "./Navbar";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,6 +21,8 @@ function Contact() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
       <div className="bg-white shadow-lg rounded-lg w-full max-w-md p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
@@ -92,6 +95,7 @@ function Contact() {
         </form>
       </div>
     </div>
+    </>
   );
 }
 

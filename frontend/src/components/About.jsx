@@ -1,7 +1,9 @@
-import React from "react";
+import Navbar from "./Navbar";
 
 const About = () => {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
@@ -43,6 +45,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
